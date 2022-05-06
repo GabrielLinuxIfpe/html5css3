@@ -7,14 +7,14 @@
     <meta name="description" content="Site criado com finalidades educacionais para ensinar HTML5, CSS3 e JavaScript, três tecnologias fundamentais da WEB.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <title>Aprenda HTML5, CSS3 e JavaScript</title>
 </head>
 <body>
-    <header>
-        <img src="img/favicon.png" alt="Logotipo do Html5, CSS3 e Javascript">
+    <header class="flex-container-row menu">
+        <img src="img/favicon.png" id="logo" alt="Logotipo do Html5, CSS3 e Javascript">
         <nav>
-            <ul>
+            <ul class="flex-container-row">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -23,11 +23,11 @@
         </nav>
     </header>
     
-    <main>
-        <h1>Aprenda <mark>HTML5</mark>, <mark>CSS3</mark> e <mark>JavaScript</mark></h1>
-        <h2>Escrever com <mark>semântica</mark>!</h2>
-        <h2>Aplicar <mark>estilos</mark> modernos!</h2>
-        <h2>Obter uma melhor <mark>interação</mark></h2>
+    <main id="destaque">
+        <h1>Aprenda <mark class="destaqueHTML">HTML5</mark>, <mark class="destaqueCSS">CSS3</mark> e <mark class="destaqueJS">JavaScript</mark></h1>
+        <h2>Escrever com <mark class="destaqueHTML">semântica</mark>!</h2>
+        <h2>Aplicar <mark class="destaqueCSS">estilos</mark> modernos!</h2>
+        <h2>Obter uma melhor <mark class="destaqueJS">interação</mark></h2>
     </main>
 
     <section>
@@ -37,7 +37,7 @@
         <p>
             A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.
         </p>
-        <a href="#" target="_blank">Saiba mais</a>
+        <a href="#" target="_blank" class="botao">Saiba mais</a>
     </section>
 
     <section>
@@ -47,7 +47,7 @@
         <p>
             CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
         </p>
-        <a href="#" target="_blank">Saiba mais</a>
+        <a href="#" target="_blank" class="botao">Saiba mais</a>
     </section>
 
     <section>
@@ -57,7 +57,7 @@
         <p>
             O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
         </p>
-        <a href="#" target="_blank">Saiba mais</a>
+        <a href="#" target="_blank" class="botao">Saiba mais</a>
     </section>
 
     <section>
@@ -85,7 +85,7 @@
             <li><img src="img/W3C Brasil Logo(1).png" alt="Logotipo do W3C Schools Brasil"><a href="https://www.w3c.br/" target="_blank">W3c Brasil</a></li>
             <li><img src="img/W3Schools Icon(1).png" alt="Logotipo do W3C Schools "><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
         </ul>
-        <a href="#">Saiba mais</a>
+        <a href="#" class="botao" target="_blank">Saiba mais</a>
     </section>
 
     <footer>

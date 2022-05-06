@@ -49,22 +49,22 @@ $colorsLikert: (
 
 // utilizando medias com mapas css e funções de cor
 
-@include body-color(red);
+@include body-color(white);
 
 @media (min-width: map-get($breakpoints, sm)){
-    @include body-color(green);
+    @include body-color(white);
 }
 
 @media (min-width: map-get($breakpoints, md)){
-    @include body-color(yellow);
+    @include body-color(white);
 }
 
 @media (min-width: map-get($breakpoints, lg)){
-    @include body-color(orange);
+    @include body-color(white);
 }
 
 @media (min-width: map-get($breakpoints, xl)){
-    @include body-color(black);
+    @include body-color(white);
 }
 
 @media (min-width: map-get($breakpoints, xxl)){
