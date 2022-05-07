@@ -56,6 +56,26 @@ mark {
           justify-content: space-between;
   background-color: #000000;
   color: #FFFFFF;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.section-details {
+  width: 70vh;
 }
 
 main, section {
@@ -77,6 +97,21 @@ main, section {
   background: url(../img/Destaque_o20.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#html {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
+  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+}
+
+#css {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(38, 77, 228, 0.8)), to(rgba(41, 101, 241, 0.8)));
+  background: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+}
+
+#javascript {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(229, 162, 40, 0.8)), to(rgba(241, 191, 38, 0.8)));
+  background: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
 }
 
 .destaqueHTML {

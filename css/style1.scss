@@ -77,7 +77,23 @@ mark {
     justify-content: space-between;
     background-color: $fontDefaultColor;
     color: $backgroundDefaultColor;
+    align-items: flex-start;
+    a {
+        color: $fontSecondaryColor;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
 
+    }
+    li {
+        margin: 10px;
+    }
+
+}
+
+.section-details {
+    width: 70vh;
 }
 
 main, section {
@@ -99,6 +115,18 @@ main, section {
     background: url(../img/Destaque_o20.png);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#html {
+    background: $gradienteHTML;
+}
+
+#css {
+    background: $gradienteCSS;
+}
+
+#javascript {
+    background: $gradienteJS;
 }
 
 .destaqueHTML {
