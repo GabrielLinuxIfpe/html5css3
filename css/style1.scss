@@ -63,6 +63,7 @@ mark {
     flex-wrap: wrap; // se houver quebra de pagina, joga pra baixo
     justify-content: center;
     align-items: center;
+    
 }
 
 .flex-container-column {
@@ -94,6 +95,42 @@ mark {
 
 .section-details {
     width: 70vh;
+    text-align: justify;
+    padding: 3vw;
+    a {
+        text-align: center;
+    }
+}
+
+.alinharTop{
+    align-items: flex-start;
+}
+
+.listaDeLinks{
+    
+    width: 30vw;
+    ul {
+        list-style-type: none;
+        align-items: flex-start;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: $fontDefaultColor;
+    }
 }
 
 main, section {
@@ -129,6 +166,10 @@ main, section {
     background: $gradienteJS;
 }
 
+#links {
+    background: $gradienteLinks;
+}
+
 .destaqueHTML {
     color: $primaryHtmlColor;
 }
@@ -141,10 +182,38 @@ main, section {
     color: $primaryJsColor;
 }
 
+#footer {
+    background-color: $backgroundSecondaryColor;
+    justify-content: space-between;
+    padding: 10px;
+    
+
+    p {
+        align-items: center;
+        color: $fontSecondaryColor;
+        padding-top: 15px;
+    }
+    
+
+    ul {
+        list-style-type: none;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+    
+}
+
 @media (orientation: landscape) {
     #destaque {
         background-size: 110vw;
     }
+
+    #InverterFlexBox{
+        flex-direction: row-reverse;
+    }
+
 }
 
 @media (orientation: portrait) {
@@ -155,6 +224,31 @@ main, section {
 
 // smarthphone em moddo retrato
 @media (min-width: map-get($breakpoints, xs)) {
+
+    #html, #css, #javascript {
+        justify-content: center;
+        flex-direction: row;
+        
+        
+        h2 {
+            width: 16vw;
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+        }
+        h3 {
+            flex-wrap: wrap;
+            width: 70vw;
+            text-align: center;
+            font-size: 15px;
+
+        }
+        p {
+            font-size: 12px;
+            width: 80vw;
+        }
+    }
+
     #logo {
         width: 100px;
         height: 100px;
@@ -166,15 +260,48 @@ main, section {
             height: 50px;
         }
     }
+
+    .logoTipo {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
 }
 
 // smarthphone em moddo paisagem
 @media (min-width: map-get($breakpoints, sm)) and (orientation: landscape) {
-    
+    #html, #css, #javascript {
+        justify-content: center;
+        flex-direction: row;
+        
+        
+        h2 {
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+            
+        }
+        h3 {
+            flex-wrap: wrap;
+            width: 65vw;
+            text-align: center;
+            font-size: 15px;
+            
+            
+
+        }
+        p {
+            font-size: 12px;
+            width: 50vw;
+        }
+    }
 }
 
 // tablets em modo retrato
 @media (min-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+
     #logo {
         width: 200px;
         height: 200px;
@@ -186,10 +313,48 @@ main, section {
             height: 100px;
         }
     }
+
+    .logoTipo {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    #html, #css, #javascript {
+        justify-content: center;
+        flex-direction: row;
+        
+        
+        h2 {
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+            
+        }
+        h3 {
+            flex-wrap: wrap;
+            width: 65vw;
+            text-align: center;
+            font-size: 15px;
+            
+            
+
+        }
+        p {
+            font-size: 12px;
+            width: 50vw;
+        }
+    }
+
+    
+
+
 }
 
 // tablets em modo paisagem
 @media (min-width: map-get($breakpoints, md)) {
+
     #logo {
         width: 200px;
         height: 200px;
@@ -201,10 +366,22 @@ main, section {
             height: 100px;
         }
     }
+
+    .logoTipo {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    
+
+
 }
 
 // desktops
 @media (min-width: map-get($breakpoints, lg)) {
+
     #logo {
         width: 260px;
         height: 260px;
@@ -216,11 +393,67 @@ main, section {
             height: 130px;
         }
     }
+
+    .logoTipo {
+        img {
+            width: 260px;
+            height: 260px;
+        }
+    }
+
+    #html, #css, #javascript {
+        justify-content: center;
+        flex-direction: row;
+        
+        h2 {
+            color: #BBBBBB;
+            width: 16vw;
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+        }
+        h3 {
+            flex-wrap: wrap;
+            width: 50vw;
+            text-align: center;
+            font-size: 15px;
+
+        }
+        p {
+            font-size: 12px;
+            width: 40vw;
+        }
+    }
+
 }
 
 // desktops com alta resolução
 @media (min-width: map-get($breakpoints, xl)) {
-    
+    #html, #css, #javascript {
+        justify-content: center;
+        flex-direction: row;
+        
+        h2 {            
+            flex-wrap: wrap;
+            font-size: 28px;
+            text-align: center;
+            
+        }
+        h3 {
+            flex-wrap: wrap;
+            
+            text-align: center;
+            font-size: 22px;
+
+        }
+        p {
+            font-size: 20px;
+            color: #027F37;
+            width: 70vh;
+            
+
+        }
+    }
 }
 
 

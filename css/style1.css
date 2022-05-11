@@ -76,6 +76,59 @@ mark {
 
 .section-details {
   width: 70vh;
+  text-align: justify;
+  padding: 3vw;
+}
+
+.section-details a {
+  text-align: center;
+}
+
+.alinharTop {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks {
+  width: 30vw;
+}
+
+.listaDeLinks ul {
+  list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.listaDeLinks img {
+  width: 50px;
+  height: 50px;
+}
+
+.listaDeLinks a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
 }
 
 main, section {
@@ -114,6 +167,11 @@ main, section {
   background: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
 }
 
+#links {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
 .destaqueHTML {
   color: #E44D26;
 }
@@ -126,9 +184,39 @@ main, section {
   color: #E5A228;
 }
 
+#footer {
+  background-color: #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#footer p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  padding-top: 15px;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul li {
+  margin: 0 10px;
+}
+
 @media (orientation: landscape) {
   #destaque {
     background-size: 110vw;
+  }
+  #InverterFlexBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
@@ -139,6 +227,33 @@ main, section {
 }
 
 @media (min-width: 0) {
+  #html, #css, #javascript {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #html h2, #css h2, #javascript h2 {
+    width: 16vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+  }
+  #html h3, #css h3, #javascript h3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  #html p, #css p, #javascript p {
+    font-size: 12px;
+    width: 80vw;
+  }
   #logo {
     width: 100px;
     height: 100px;
@@ -148,6 +263,39 @@ main, section {
   }
   .menu ul {
     height: 50px;
+  }
+  .logoTipo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+  #html, #css, #javascript {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #html h2, #css h2, #javascript h2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+  }
+  #html h3, #css h3, #javascript h3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 65vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  #html p, #css p, #javascript p {
+    font-size: 12px;
+    width: 50vw;
   }
 }
 
@@ -162,6 +310,36 @@ main, section {
   .menu ul {
     height: 100px;
   }
+  .logoTipo img {
+    width: 200px;
+    height: 200px;
+  }
+  #html, #css, #javascript {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #html h2, #css h2, #javascript h2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+  }
+  #html h3, #css h3, #javascript h3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 65vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  #html p, #css p, #javascript p {
+    font-size: 12px;
+    width: 50vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -175,6 +353,10 @@ main, section {
   .menu ul {
     height: 100px;
   }
+  .logoTipo img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -187,6 +369,67 @@ main, section {
   }
   .menu ul {
     height: 130px;
+  }
+  .logoTipo img {
+    width: 260px;
+    height: 260px;
+  }
+  #html, #css, #javascript {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #html h2, #css h2, #javascript h2 {
+    color: #BBBBBB;
+    width: 16vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+  }
+  #html h3, #css h3, #javascript h3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 50vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  #html p, #css p, #javascript p {
+    font-size: 12px;
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #html, #css, #javascript {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #html h2, #css h2, #javascript h2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 28px;
+    text-align: center;
+  }
+  #html h3, #css h3, #javascript h3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    font-size: 22px;
+  }
+  #html p, #css p, #javascript p {
+    font-size: 20px;
+    color: #027F37;
+    width: 70vh;
   }
 }
 /*# sourceMappingURL=style1.css.map */
